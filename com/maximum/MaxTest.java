@@ -12,26 +12,29 @@ public class MaxTest {
 		Integer first = 56;
         Integer second = 35;
         Integer third = 65;
-		FindMax maxValue=new FindMax(first, second ,third);
-		Integer result =maxValue.testMaximum(first, second ,third);
-		Assert.assertSame(65, result);
+        Integer fourth = 72;
+		FindMax maxValue=new FindMax(first, second ,third, fourth);
+		Integer result =maxValue.testMaximum(first, second ,third, fourth);
+		Assert.assertSame(72, result);
 	}
 	@Test
 		public void givenMaxFloatNumber_ReturnMaximumValueSame() {
 			Float first = 56.56f;
 	        Float second = 35.567f;
 	        Float third = 65.65f;
-			FindMax maxValue=new FindMax(first, second ,third);
-			Float result =maxValue.testMaximum(first, second ,third);
-			Assert.assertEquals(65.65f, result, 0.0f);		
+	        Float fourth = 72.2f;
+			FindMax maxValue=new FindMax(first, second ,third, fourth);
+			Float result =maxValue.testMaximum(first, second ,third, fourth);
+			Assert.assertEquals(72.2f, result, 0.0f);		
 	}
 	@Test
 	public void givenMaxString_ReturnMaximumValueSame() {
 		String first = "apple";
 		String second = "peach";
 		String third = "banana";
-		FindMax maxValue=new FindMax(first, second ,third);
-		String result =maxValue.testMaximum(first, second ,third);
+		String fourth = "orange";
+		FindMax maxValue=new FindMax(first, second ,third,fourth);
+		String result =maxValue.testMaximum(first, second ,third,fourth);
 		Assert.assertSame("peach", result);		
 }
 }
