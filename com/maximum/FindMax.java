@@ -30,7 +30,6 @@ public class FindMax {
 		return max;
 	}
 
-
 	public static void main(String[] args) {
 		Integer[] intArray = { 1, 2, 3 };
 		Float[] floatArray = { 1.224f, 3.364f, 4.365f };
