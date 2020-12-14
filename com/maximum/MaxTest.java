@@ -23,14 +23,20 @@ public class MaxTest {
 	@Test
 	public void givenMaxNumberAtThirdPosition_ReturnMaximumValueSame() {
 		FindMax maxValue=new FindMax();
-		Integer result =maxValue.max(9, 8, 13);
+		Integer result = maxValue.max(9, 8, 13);
 		Assert.assertSame(13, result);
 	}
 	
 	@Test
 	public void givenMaxFloatNumberAtFirstPosition_ReturnMaximumValueSame() {
 		FindMax maxValue=new FindMax();
-		Float result =maxValue.max(9.12f, 8.21f, 3.214f);
+		Float result = maxValue.max(9.12f, 8.21f, 3.214f);
 		Assert.assertEquals(9.12f, result, 0.0f);
+	}
+	@Test
+	public void givenMaxFloatNumberAtSecondPosition_ReturnMaximumValueSame() {
+		FindMax maxValue=new FindMax();
+		Float result = maxValue.max(9.12f, 18.21f, 3.214f);
+		Assert.assertEquals(18.21f, result, 0.0f);
 	}
 }
