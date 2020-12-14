@@ -45,4 +45,10 @@ public class MaxTest {
 		Float result = maxValue.max(9.12f,3.214f , 18.21f);
 		Assert.assertEquals(18.21f, result, 0.0f);
 	}
+	@Test
+	public void givenMaxStringAtFirstPosition_ReturnMaximumValueSame() {
+		FindMax maxValue=new FindMax();
+		String result =maxValue.max("Peach","Apple","Bannana");
+		Assert.assertEquals("Peach", result);
+	}
 }
